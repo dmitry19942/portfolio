@@ -3,13 +3,19 @@ import style from './Project.module.css';
 
 function Project(props) {
 
+    const openInNewTab = url => {
+        window.open(url);
+    };
+
     return (
         <div className={style.project}>
             <div className={style.icon}>
-                <button className={style.button} >View</button>
+                <a onClick={() => openInNewTab(props.onClick)}>
+                    <button className={style.button} >View</button>
+                </a>
             </div>
             <h3>{props.title}</h3>
-            <span className={style.description}>{props.description}</span>
+            <span>{props.description}</span>
         </div>
     );
 }
