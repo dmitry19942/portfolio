@@ -1,9 +1,9 @@
-.remoteWorkBlock {
-    height: 22vh;
-    background-color: #e8e8e8;
+.contactsBlock {
+    height: 40vh;
+    background-color: #e7bcc2;
 }
 
-.remoteWorkContainer {
+.contactsContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,10 +16,20 @@
 
 .button {
     height: 40px;
-    width: 120px;
+    width: 170px;
     background-color: #696868;
     border: none;
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.input {
+    margin-bottom: 2px;
+    width: 233px;
+}
+
+.textarea {
+    margin-top: 2px;
+    width: 235px;
 }

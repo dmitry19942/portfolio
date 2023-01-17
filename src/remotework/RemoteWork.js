@@ -6,7 +6,7 @@ function RemoteWork() {
     return (
         <div className={style.remoteWorkBlock}>
             <div className={`${styleContainer.container} ${style.remoteWorkContainer}`}>
-                <h2 className={style.title}>I am considering options for remote work</h2>
+                <h2 className={style.title}>I Am Available For Freelance</h2>
                 <button className={style.button}>Hire me</button>
             </div>
         </div>
