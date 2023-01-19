@@ -1,0 +1,35 @@
+.footerBlock {
+    height: 30vh;
+    background-color: #b0e0b0;
+}
+
+.footerContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.title {
+    background-color: gray;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    margin-right: 30px;
+}
+
+.iconLast {
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+}
+
+.icons {
+    display: flex;
+    border: 1px solid;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}

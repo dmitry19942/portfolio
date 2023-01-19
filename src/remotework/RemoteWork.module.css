@@ -1,5 +1,5 @@
 .remoteWorkBlock {
-    height: 22vh;
+    height: 25vh;
     background-color: #e8e8e8;
 }
 
@@ -12,6 +12,7 @@
 
 .title {
     background-color: gray;
+    text-align: center;
 }
 
 .button {
