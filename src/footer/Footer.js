@@ -11,7 +11,7 @@ function Footer() {
                     <div className={style.icon}></div>
                     <div className={style.icon}></div>
                     <div className={style.icon}></div>
-                    <div className={style.iconLast}></div>
+                    <div className={style.icon}></div>
                 </div>
                 <span>© 2023, All Rights Reserved.</span>
             </div>

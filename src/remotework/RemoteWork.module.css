@@ -1,5 +1,5 @@
 .remoteWorkBlock {
-    height: 25vh;
+    min-height: 25vh;
     background-color: #e8e8e8;
 }
 

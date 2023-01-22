@@ -7,16 +7,10 @@ function Contacts() {
         <div className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <h2 className={style.title}>Contacts</h2>
-                <form action="">
-                    <div>
+                <form action="" className={style.formContainer}>
                         <input type="text" className={style.input}/>
-                    </div>
-                    <div>
                         <input type="text" className={style.input}/>
-                    </div>
-                    <div>
                         <textarea name="" id="" cols="30" rows="5" className={style.textarea}></textarea>
-                    </div>
                 </form>
                 <button className={style.button}>Send message</button>
             </div>

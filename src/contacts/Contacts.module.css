@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 40vh;
+    min-height: 40vh;
     background-color: #e7bcc2;
 }
 
@@ -8,6 +8,11 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
 }
 
 .title {

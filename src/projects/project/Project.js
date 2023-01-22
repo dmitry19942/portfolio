@@ -15,7 +15,7 @@ function Project(props) {
                 </a>
             </div>
             <h3>{props.title}</h3>
-            <span>{props.description}</span>
+            <span className={style.projectSpan}>{props.description}</span>
         </div>
     );
 }

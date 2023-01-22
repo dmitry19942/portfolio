@@ -1,5 +1,5 @@
 .footerBlock {
-    height: 30vh;
+    min-height: 30vh;
     background-color: #b0e0b0;
 }
 
@@ -18,17 +18,12 @@
     height: 40px;
     width: 40px;
     background-color: gray;
-    margin-right: 30px;
-}
-
-.iconLast {
-    height: 40px;
-    width: 40px;
-    background-color: gray;
 }
 
 .icons {
+    width: 280px;
     display: flex;
+    justify-content: space-between;
     border: 1px solid;
     margin-bottom: 30px;
     margin-top: 10px;

@@ -9,7 +9,7 @@
 
 .icon {
     height: 200px;
-    width: 290px;
+    width: 280px;
     background-color: gray;
     display: flex;
     align-items: center;
@@ -23,4 +23,11 @@
     background-color: #696868;
     border: none;
     font-weight: bold;
+}
+
+.projectSpan {
+    width: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
