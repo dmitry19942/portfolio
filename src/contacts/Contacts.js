@@ -12,7 +12,7 @@ function Contacts() {
                         <input type="text" className={style.input}/>
                         <textarea name="" id="" cols="30" rows="5" className={style.textarea}></textarea>
                 </form>
-                <button className={style.button}>Send message</button>
+                <button type='submit' className={style.button}>Send message</button>
             </div>
         </div>
     );

@@ -11,3 +11,8 @@
     height: 400px;
     background-color: antiquewhite;
 }
+@media screen and (max-height: 588px){
+    .mainBlock {
+        height: auto;
+    }
+}
