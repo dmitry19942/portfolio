@@ -14,8 +14,11 @@ function Project(props) {
                     <button className={style.button} >View</button>
                 </a>
             </div>
-            <h3>{props.title}</h3>
-            <span className={style.projectSpan}>{props.description}</span>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <span className={style.projectSpan}>{props.description}</span>
+            </div>
+
         </div>
     );
 }
