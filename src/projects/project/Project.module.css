@@ -7,22 +7,65 @@
     text-align: center;
 }
 
-.icon {
-    height: 200px;
-    width: 280px;
-    background-color: gray;
+.image {
+    height: 280px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.image::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 500px){
+    .image {
+        width: 360px;
+        height: 252px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .image {
+        width: 320px;
+        height: 224px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .image {
+        width: 280px;
+        height: 196px;
+    }
 }
 
 .button {
-    height: 50px;
-    width: 100px;
-    background-color: #696868;
+    height: 45px;
+    width: 90px;
+    background-color: #e8e8e8;
     border: none;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #4e93e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .projectInfo {

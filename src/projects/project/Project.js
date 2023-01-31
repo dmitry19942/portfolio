@@ -9,9 +9,9 @@ function Project(props) {
 
     return (
         <div className={style.project}>
-            <div className={style.icon}>
-                <a onClick={() => openInNewTab(props.onClick)}>
-                    <button className={style.button} >View</button>
+            <div className={style.image} style={props.style}>
+                <a onClick={() => openInNewTab(props.onClick)} className={style.button}>
+                    View
                 </a>
             </div>
             <div className={style.projectInfo}>
