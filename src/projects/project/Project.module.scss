@@ -1,0 +1,98 @@
+@import "../../common/styles/sass/variables";
+
+.project {
+    width: 400px;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .image {
+        height: 280px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: $bgColor;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.2;
+        }
+        @media screen and (max-width: 500px){
+                width: 360px;
+                height: 252px;
+        }
+        @media screen and (max-width: 450px){
+                width: 320px;
+                height: 224px;
+        }
+        @media screen and (max-width: 400px){
+                width: 280px;
+                height: 196px;
+        }
+        .button {
+            height: 45px;
+            width: 90px;
+            background-color: $textColor;
+            border: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: $primaryColor;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+    .projectInfo {
+        padding: 25px 20px;
+        .projectTitle {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px;
+            margin: 0 0 5px;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            color: $textColor;
+        }
+        .projectSpan {
+            padding-left: 10px;
+            padding-right: 10px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            font-weight: 400;
+            font-size: 14px;
+            color: $textColor;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

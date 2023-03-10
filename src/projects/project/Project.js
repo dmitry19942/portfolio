@@ -1,4 +1,4 @@
-import style from './Project.module.css';
+import style from './Project.module.scss';
 
 
 function Project(props) {
