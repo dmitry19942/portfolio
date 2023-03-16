@@ -1,0 +1,24 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins";
+
+.remoteWorkBlock {
+    background-color: $bgSecondColor;
+    padding: 100px 0;
+}
+
+.remoteWorkContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.button {
+    @include text(('Poppins', sans-serif), 14px, 1.2);
+    height: 40px;
+    width: 120px;
+    background-color: $primaryColor;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
