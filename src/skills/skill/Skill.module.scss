@@ -1,0 +1,35 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.skill {
+    width: 300px;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    .icon {
+        height: 70px;
+        width: 70px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .title {
+        @include text(('Josefin Sans', sans-serif), 16px, 1.2);
+        margin: 20px 0 10px;
+        letter-spacing: 1px;
+    }
+    .description {
+        @include text(('Poppins', sans-serif), 14px, 1.8);
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+
+
+
+
