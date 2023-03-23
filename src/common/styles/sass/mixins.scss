@@ -6,3 +6,14 @@
   line-height: $lineHeight;
   color: $textColor;
 }
+
+@mixin textMainBlock($fontFamily, $fontSize, $lineHeight, $fontWeight, $letterSpacing, $textTransform, $margin) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+  font-weight: $fontWeight;
+  letter-spacing: $letterSpacing;
+  text-transform: $textTransform;
+  margin: $margin;
+}

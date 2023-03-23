@@ -1,0 +1,36 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins";
+
+.mainBlock {
+    height: 100vh;
+    background-color: $bgColor;
+    padding: 20px 0;
+    @media screen and (max-height: 680px){
+            height: auto;
+    }
+    .text {
+        width: 500px;
+        h1 {
+            @include textMainBlock(('Montserrat', sans-serif), 36px, 40px, 700, normal, uppercase, 0 0 15px);
+        }
+        h5 {
+            @include textMainBlock(('Montserrat', sans-serif), 16px, 1.1, 700, 1px, uppercase, 0 0 15px);
+        }
+    }
+    .photo {
+        width: 400px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+
+
+
+
+
