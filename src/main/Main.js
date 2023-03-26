@@ -11,7 +11,7 @@ function Main() {
     };
 
     return (
-        <div className={style.mainBlock}>
+        <div id={'main'} className={style.mainBlock}>
             <div className={styleContainer.container}>
                 <div className={style.text}>
                     <h5>HELLO, MY NAME IS</h5>

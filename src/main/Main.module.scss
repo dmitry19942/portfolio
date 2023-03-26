@@ -8,8 +8,11 @@
     @media screen and (max-height: 680px){
             height: auto;
     }
+    @media screen and (max-width: 1077px){
+        height: auto;
+        padding: 100px 0;
+    }
     .text {
-        width: 500px;
         h1 {
             @include textMainBlock(('Montserrat', sans-serif), 36px, 40px, 700, normal, uppercase, 0 0 15px);
         }

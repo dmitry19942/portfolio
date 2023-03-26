@@ -1,0 +1,17 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.nav {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a {
+    @include textHeaderA(('Montserrat', sans-serif), 14px, 40px, 650, 0.4px, uppercase);
+    text-decoration: none;
+    padding: 0 5px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}

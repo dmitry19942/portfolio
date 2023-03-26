@@ -1,0 +1,22 @@
+@import "../common/styles/sass/variables.scss";
+
+.header {
+    width: 100%;
+    background-color: $bgColor;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation {
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: $bgColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
