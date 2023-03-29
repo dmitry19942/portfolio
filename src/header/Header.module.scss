@@ -9,14 +9,14 @@
     z-index: 1;
     display: flex;
     justify-content: flex-end;
+    .navigation {
+        height: 80px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: $bgColor;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
-.navigation {
-    height: 80px;
-    width: 80%;
-    margin: 0 auto;
-    background-color: $bgColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}

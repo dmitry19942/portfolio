@@ -5,13 +5,33 @@
     border: 1px solid;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .a {
+        @include textHeaderA(('Montserrat', sans-serif), 14px, 40px, 650, 0.4px, uppercase);
+        text-decoration: none;
+        padding: 0 5px;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .burgerBtn {
+        cursor: pointer;
+        margin-left: 15px;
+        position: relative;
+        font-size: 14px;
+        color: $textColor;
+        .svg {
+            overflow: visible;
+            width: 0.875em;
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            vertical-align: -0.125em;
+        }
+    }
 }
 
-.a {
-    @include textHeaderA(('Montserrat', sans-serif), 14px, 40px, 650, 0.4px, uppercase);
-    text-decoration: none;
-    padding: 0 5px;
-    position: relative;
-    margin-right: 20px;
-    cursor: pointer;
-}
+
+
+
+
