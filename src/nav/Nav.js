@@ -1,24 +1,37 @@
 import style from './Nav.module.scss';
+import {useState} from "react";
+
 
 function Nav() {
+
+    const [menu, setMenu] = useState(false)
+
+    const openMenu = () => {
+        setMenu(true)
+    }
+
+    const closeMenu = () => {
+            setMenu(false)
+    }
+
     return (
         <div className={style.nav}>
             <a className={style.a} href={"#main"}>Home</a>
             <a className={style.a} href={"#skills"}>Skills</a>
             <a className={style.a} href={"#projects"}>Projects</a>
             <a className={style.a} href={"#contacts"}>Contacts</a>
-            <div>
+            <div className={style.menu}>
                 <div className={style.burgerBtn}>
-                    <svg className={style.svg} aria-hidden='true' focusable='false' data-prefix='fas' data-icon='bars'
+                    <svg className={style.svg} onClick={openMenu} aria-hidden='true' focusable='false' data-prefix='fas' data-icon='bars'
                          role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'>
                         <path fill="currentColor"
                               d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
                     </svg>
                 </div>
-                <div className={style.menuActive}>
+                <div className={menu ? style.menuActive : style.menuMenu}>
                     <div className={style.menuContent}>
                         <div className={style.menuClose}>
-                            <svg className={style.svgMenu} aria-hidden='true' focusable='false' data-prefix='fas'
+                            <svg className={style.svgMenu} onClick={closeMenu} aria-hidden='true' focusable='false' data-prefix='fas'
                                  data-icon='times-circle' role='img' xmlns='http://www.w3.org/2000/svg'
                                  viewBox='0 0 512 512'>
                                 <path fill="currentColor"
