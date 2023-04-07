@@ -16,6 +16,21 @@
     @media screen and (max-width: 512px) {
       display: none;
     }
+    &::after {
+      width: 0;
+      background: $primaryColor none repeat scroll 0 0;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .3s ease-in-out;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+
   }
   .menu {
     .burgerBtn {
@@ -55,7 +70,7 @@
           color: #555;
           transition: all .3s ease 0s;
           &:hover {
-            color: #fff;
+            color: $textColor;
           }
           .svgMenu {
             overflow: visible;
