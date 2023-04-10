@@ -14,7 +14,7 @@
         flex-wrap: nowrap;
         .button {
             @include text(('Poppins', sans-serif), 14px, 1.2);
-            height: 40px;
+            height: 35px;
             width: 120px;
             background-color: $primaryColor;
             border: none;
