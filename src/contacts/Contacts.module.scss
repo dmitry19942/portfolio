@@ -25,6 +25,7 @@
                 border-radius: 0;
                 padding: 0 15px;
                 @include text(('Poppins', sans-serif), 14px, 1.2);
+                height: calc(1.5em + 0.75rem + 2px);
             }
             .input2 {
                 margin-bottom: 10px;
@@ -33,12 +34,13 @@
                 border-radius: 0;
                 padding: 0 15px;
                 @include text(('Poppins', sans-serif), 14px, 1.2);
+                height: calc(1.5em + 0.75rem + 2px);
             }
             .textarea {
                 background-color: $bgSecondColor;
                 border: 1px solid #4a4a4a;
                 border-radius: 0;
-                padding: 0 15px;
+                padding: 15px 15px;
                 @include text(('Poppins', sans-serif), 14px, 1.2);
             }
         }

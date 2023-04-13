@@ -1,0 +1,61 @@
+@import "../common/styles/sass/variables";
+
+.footerBlock {
+    text-align: center;
+    padding: 40px 0;
+    background: $bgSecondColor;
+    .footerContainer {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        .a {
+            text-decoration: none;
+            .title {
+                letter-spacing: 3px;
+                color: $textColor;
+                font-size: 22px;
+                font-weight: 700;
+                display: block;
+                font-family: 'Josefin Sans', sans-serif;
+                margin: 0 0 20px ;
+            }
+        }
+        .icons {
+            width: 370px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            @media screen and (max-width: 470px) {
+                    width: 280px;
+            }
+            .icon {
+                height: 40px;
+                width: 40px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+        .span {
+            color: $textColor;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
