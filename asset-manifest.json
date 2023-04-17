@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d1cf2e60.css",
-    "main.js": "/portfolio/static/js/main.5ea538a9.js",
+    "main.js": "/portfolio/static/js/main.fb1a44db.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/reactTasks.jpg": "/portfolio/static/media/reactTasks.4c117f18a712173ac982.jpg",
+    "static/media/socialNetwork.png": "/portfolio/static/media/socialNetwork.f1e99ff9fce3e57e1896.png",
     "static/media/todolist.jpg": "/portfolio/static/media/todolist.ae93a69547c78b68db1d.jpg",
     "static/media/counter.jpg": "/portfolio/static/media/counter.7f91ae98a2d90526e930.jpg",
     "static/media/sccIcon.webp": "/portfolio/static/media/sccIcon.ad1826b69113db4a265d.webp",
@@ -13,11 +15,11 @@
     "static/media/facebookLogo.png": "/portfolio/static/media/facebookLogo.3cb08c9d44e0707a25e4.png",
     "index.html": "/portfolio/index.html",
     "main.d1cf2e60.css.map": "/portfolio/static/css/main.d1cf2e60.css.map",
-    "main.5ea538a9.js.map": "/portfolio/static/js/main.5ea538a9.js.map",
+    "main.fb1a44db.js.map": "/portfolio/static/js/main.fb1a44db.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1cf2e60.css",
-    "static/js/main.5ea538a9.js"
+    "static/js/main.fb1a44db.js"
   ]
 }
