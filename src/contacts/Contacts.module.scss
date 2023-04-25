@@ -73,6 +73,9 @@
             border: none;
             margin-top: 15px;
             cursor: pointer;
+            &:hover {
+                background-color: #2771ff;
+            }
         }
     }
 }
