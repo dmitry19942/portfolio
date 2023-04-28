@@ -1,6 +1,7 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 
+
 .nav {
   border: 1px solid;
   display: flex;
@@ -30,7 +31,6 @@
     &:hover:after {
       width: 100%;
     }
-
   }
   .menu {
     .burgerBtn {
