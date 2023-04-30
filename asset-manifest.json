@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.60b53b07.css",
-    "main.js": "/portfolio/static/js/main.89fb6d97.js",
+    "main.css": "/portfolio/static/css/main.537ac3d2.css",
+    "main.js": "/portfolio/static/js/main.076d2e08.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/UnitTest.png": "/portfolio/static/media/UnitTest.09859ca6a8497c85c5f2.png",
     "static/media/RestAPI.png": "/portfolio/static/media/RestAPI.c5618b6df35050c50c2e.png",
@@ -22,12 +22,12 @@
     "static/media/photo.jpg": "/portfolio/static/media/photo.d3ed11af566bd8523f17.jpg",
     "static/media/facebookLogo.png": "/portfolio/static/media/facebookLogo.3cb08c9d44e0707a25e4.png",
     "index.html": "/portfolio/index.html",
-    "main.60b53b07.css.map": "/portfolio/static/css/main.60b53b07.css.map",
-    "main.89fb6d97.js.map": "/portfolio/static/js/main.89fb6d97.js.map",
+    "main.537ac3d2.css.map": "/portfolio/static/css/main.537ac3d2.css.map",
+    "main.076d2e08.js.map": "/portfolio/static/js/main.076d2e08.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60b53b07.css",
-    "static/js/main.89fb6d97.js"
+    "static/css/main.537ac3d2.css",
+    "static/js/main.076d2e08.js"
   ]
 }
