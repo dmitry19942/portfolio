@@ -4,14 +4,90 @@
 .remoteWorkBlock {
     background-color: $bgSecondColor;
     padding: 100px 0;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 750px) {
         padding: 80px 0;
     }
+
     .remoteWorkContainer {
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: nowrap;
+        @include container();
+        box-sizing: border-box;
+
+        .header {
+            color: #ffffff;
+            background-color: #2b2b2b;
+            padding: 18px 40px 20px;
+            border-bottom: 1px solid #d9d9d9;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            h4 {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0;
+                line-height: 1.42857143;
+            }
+
+            p {
+                margin: 3px 0 0 0;
+            }
+        }
+
+        .form {
+            padding: 30px 40px;
+            background-color: #f5f5f5;
+
+            .inputBlock {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-sizing: border-box;
+
+                input {
+                    color: #b3b3b3;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 26px;
+                    letter-spacing: normal;
+                    padding: 10px 0;
+                    font-family: 'Poppins', sans-serif;
+                    margin-top: 20px;
+                    border: 1px solid #d9d9d9;
+                    text-indent: 15px
+                }
+
+                &:active, :hover, :focus {
+                    outline: none;
+                    outline-offset: 0;
+                }
+
+            }
+
+            textarea {
+                color: #b3b3b3;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 26px;
+                letter-spacing: normal;
+                font-family: 'Poppins', sans-serif;
+                max-height: 300px;
+                border: 1px solid #d9d9d9;
+                margin: 20px 0;
+                padding: 11px;
+                width: 95%;
+                height: 100px;
+                resize: none;
+            }
+
+            &:active, :hover, :focus {
+                outline: none;
+                outline-offset: 0;
+            }
+        }
         .button {
             @include text(('Poppins', sans-serif), 14px, 1.2);
             height: 35px;
@@ -20,6 +96,7 @@
             border: none;
             margin-top: 40px;
             cursor: pointer;
+
             &:hover {
                 background-color: #2771ff;
             }
