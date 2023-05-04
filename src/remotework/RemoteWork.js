@@ -32,9 +32,11 @@ function RemoteWork() {
                                 <input type="email" placeholder="Please enter Your Email"/>
                             </div>
                             <textarea placeholder="Your Message..."/>
+                            <div className={style.btn}>
                                 <button className={style.button}>
                                     Send Offer
                                 </button>
+                            </div>
                         </form>
                     </div>
                 </HiringModal>
