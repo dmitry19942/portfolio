@@ -12,6 +12,14 @@
         height: auto;
         padding: 100px 0;
     }
+    .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+    }
     .text {
         h1 {
             @include textMainBlock(('Montserrat', sans-serif), 36px, 40px, 700, normal, uppercase, 0 0 15px);
@@ -27,8 +35,9 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
 }
+
+
 
 
 
