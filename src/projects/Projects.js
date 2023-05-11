@@ -9,6 +9,7 @@ import reactTasksImage from './../assets/image/reactTasks.jpg'
 import futureProjectImage1 from './../assets/image/futureProject.jpg'
 import futureProjectImage2 from './../assets/image/futureProject2.webp'
 import {v1} from "uuid";
+import Fade from 'react-reveal/Fade';
 
 
 function Projects() {
@@ -24,12 +25,14 @@ function Projects() {
 
     return (
         <div id='projects' className={style.projectsBlock}>
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <Title text={'My Projects'}/>
-                <div className={style.projects}>
-                    {projects.map(p => <Project key={p.id} style={p.style} title={p.title} description={p.description} onClick={p.onClick} />)}
+            <Fade right>
+                <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+                    <Title text={'My Projects'}/>
+                    <div className={style.projects}>
+                        {projects.map(p => <Project key={p.id} style={p.style} title={p.title} description={p.description} onClick={p.onClick} />)}
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 }

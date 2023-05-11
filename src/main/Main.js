@@ -4,6 +4,7 @@ import photoImage from '../assets/photo/photo.jpg'
 import Particles from "react-tsparticles";
 import {useCallback} from "react";
 import {loadFull} from "tsparticles";
+import Fade from 'react-reveal/Fade';
 
 
 function Main() {
@@ -94,14 +95,16 @@ return (
     <div id={'main'} className={style.mainBlock}>
         <Particles className={style.particles} id={'tsparticles'} init={particlesInit}
                    loaded={particlesLoaded} options={particlesOpt}/>
-        <div className={styleContainer.container}>
-            <div className={style.text}>
-                <h5>HELLO, MY NAME IS</h5>
-                <h1>DZMITRY HARUSTOVICH</h1>
-                <h5>FRONT-END DEVELOPER</h5>
+        <Fade top>
+            <div className={styleContainer.container}>
+                <div className={style.text}>
+                    <h5>HELLO, MY NAME IS</h5>
+                    <h1>DZMITRY HARUSTOVICH</h1>
+                    <h5>FRONT-END DEVELOPER</h5>
+                </div>
+                <div className={style.photo} style={photo}></div>
             </div>
-            <div className={style.photo} style={photo}></div>
-        </div>
+        </Fade>
     </div>
 );
 }

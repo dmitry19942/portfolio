@@ -15,6 +15,7 @@ import materialUIIcon from "../assets/icon/mui.png";
 import antDesignIcon from "../assets/icon/AntDesign.png";
 import gitIcon from "../assets/icon/git.png";
 import {v1} from "uuid";
+import Fade from 'react-reveal/Fade';
 
 
 function Skills() {
@@ -36,12 +37,14 @@ function Skills() {
 
     return (
         <div id='skills' className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title text={'My Skills'} />
-                <div className={style.skills}>
-                    {skills.map(s => <Skill key={s.id} style={s.style} title={s.title} description={s.description} /> )}
+            <Fade left>
+                <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+                    <Title text={'My Skills'} />
+                    <div className={style.skills}>
+                        {skills.map(s => <Skill key={s.id} style={s.style} title={s.title} description={s.description} /> )}
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 }
