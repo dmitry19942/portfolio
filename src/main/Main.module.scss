@@ -27,6 +27,9 @@
         h5 {
             @include textMainBlock(('Montserrat', sans-serif), 16px, 1.1, 700, 1px, uppercase, 0 0 15px);
         }
+        h3 {
+            @include textMainBlock(('Montserrat', sans-serif), 24px, 1.2, 700, 1px, uppercase, 0 0 15px);
+        }
     }
     .photo {
         width: 400px;

@@ -5,6 +5,8 @@ import Particles from "react-tsparticles";
 import {useCallback} from "react";
 import {loadFull} from "tsparticles";
 import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
+import {Tilt} from 'react-tilt'
 
 
 function Main() {
@@ -81,32 +83,50 @@ function Main() {
         detectRetina: true,
     }
 
-const particlesInit = useCallback(async engine => {
-    console.log(engine);
-    await loadFull(engine);
-}, []);
+    const particlesInit = useCallback(async engine => {
+        console.log(engine);
+        await loadFull(engine);
+    }, []);
 
-const particlesLoaded = useCallback(async container => {
-    await console.log(container);
-}, []);
+    const particlesLoaded = useCallback(async container => {
+        await console.log(container);
+    }, []);
 
-return (
+    const defaultOptions = {
+        reverse: false,  // reverse the tilt direction
+        max: 35,     // max tilt rotation (degrees)
+        perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+        scale: 1,    // 2 = 200%, 1.5 = 150%, etc..
+        speed: 400,   // Speed of the enter/exit transition
+        transition: true,   // Set a transition on enter/exit.
+        axis: null,   // What axis should be disabled. Can be X or Y.
+        reset: true,    // If the tilt effect has to be reset on exit.
+        easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+    }
 
-    <div id={'main'} className={style.mainBlock}>
-        <Particles className={style.particles} id={'tsparticles'} init={particlesInit}
-                   loaded={particlesLoaded} options={particlesOpt}/>
-        <Fade top>
-            <div className={styleContainer.container}>
-                <div className={style.text}>
-                    <h5>HELLO, MY NAME IS</h5>
-                    <h1>DZMITRY HARUSTOVICH</h1>
-                    <h5>FRONT-END DEVELOPER</h5>
+    return (
+
+        <div id={'main'} className={style.mainBlock}>
+            <Particles className={style.particles} id={'tsparticles'} init={particlesInit}
+                       loaded={particlesLoaded} options={particlesOpt}/>
+            <Fade top>
+                <div className={styleContainer.container}>
+                    <div className={style.text}>
+                        <h5>HELLO, MY NAME IS</h5>
+                        <h1>DZMITRY HARUSTOVICH</h1>
+                        <h3>
+                            <ReactTypingEffect
+                                text={'FRONT-END DEVELOPER'}
+                            />
+                        </h3>
+                    </div>
+                    <Tilt options={defaultOptions}>
+                        <div className={style.photo} style={photo}></div>
+                    </Tilt>
                 </div>
-                <div className={style.photo} style={photo}></div>
-            </div>
-        </Fade>
-    </div>
-);
+            </Fade>
+        </div>
+    );
 }
 
 export default Main;
