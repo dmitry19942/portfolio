@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: nowrap;
+        @include container();
         .formContainer {
             display: flex;
             flex-direction: column;

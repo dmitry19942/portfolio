@@ -1,10 +1,7 @@
 import style from './RemoteWork.module.scss';
-import styleContainer from './../common/styles/Container.module.css'
 import Title from "../common/components/title/Title";
 import {useState} from "react";
 import HiringModal from "../common/components/modalWindow/ModalWindow";
-import Fade from 'react-reveal/Fade';
-
 
 
 function RemoteWork() {
@@ -17,8 +14,7 @@ function RemoteWork() {
 
     return (
         <div className={style.remoteWorkBlock}>
-            <Fade top>
-                <div className={`${styleContainer.container} ${style.remoteWorkContainer}`}>
+                <div className={style.remoteWorkContainer}>
                     <Title text={'I Am Available For Freelance'}/>
                     <button className={style.button} onClick={handlerModal}>HIRE ME</button>
                     <HiringModal active={activeModal} setActive={setActiveModal}>
@@ -43,7 +39,6 @@ function RemoteWork() {
                         </div>
                     </HiringModal>
                 </div>
-            </Fade>
         </div>
     );
 }

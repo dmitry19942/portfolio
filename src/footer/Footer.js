@@ -1,5 +1,4 @@
 import style from './Footer.module.scss';
-import styleContainer from './../common/styles/Container.module.css'
 import telegramIcon from "../assets/icon/Telegram_logo.png";
 import facebookIcon from "../assets/icon/facebookLogo.png";
 import linkedinIcon from "../assets/icon/linkedinLogo.png";
@@ -31,7 +30,7 @@ function Footer() {
     return (
         <div className={style.footerBlock}>
             <Fade right>
-                <div className={`${styleContainer.container} ${style.footerContainer}`}>
+                <div className={style.footerContainer}>
                     <a href={"#main"} className={style.a}>
                         <h2 className={style.title}>Dzmitry Harustovich</h2>
                     </a>

@@ -20,23 +20,35 @@
         right: 0;
         opacity: 0.3;
     }
-    .text {
-        h1 {
-            @include textMainBlock(('Montserrat', sans-serif), 36px, 40px, 700, normal, uppercase, 0 0 15px);
+    .mainContainer {
+        @include container();
+        justify-content: space-around;
+        .text {
+            h1 {
+                @include textMainBlock(('Montserrat', sans-serif), 36px, 40px, 700, normal, uppercase, 0 0 15px);
+            }
+            h5 {
+                @include textMainBlock(('Montserrat', sans-serif), 16px, 1.1, 700, 1px, uppercase, 0 0 15px);
+            }
+            h3 {
+                @include textMainBlock(('Montserrat', sans-serif), 24px, 1.2, 700, 1px, uppercase, 0 0 15px);
+            }
         }
-        h5 {
-            @include textMainBlock(('Montserrat', sans-serif), 16px, 1.1, 700, 1px, uppercase, 0 0 15px);
+        .photo {
+            width: 400px;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media screen and (max-width: 450px){
+                height: 450px;
+                width: 350px;
+            }
+            @media screen and (max-width: 400px){
+                height: 400px;
+                width: 300px;
+            }
         }
-        h3 {
-            @include textMainBlock(('Montserrat', sans-serif), 24px, 1.2, 700, 1px, uppercase, 0 0 15px);
-        }
-    }
-    .photo {
-        width: 400px;
-        height: 500px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 }
 

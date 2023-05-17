@@ -1,5 +1,4 @@
 import style from './Projects.module.scss';
-import styleContainer from './../common/styles/Container.module.css'
 import Project from "./project/Project";
 import Title from "../common/components/title/Title";
 import todoImage from './../assets/image/todolist.jpg'
@@ -26,7 +25,7 @@ function Projects() {
     return (
         <div id='projects' className={style.projectsBlock}>
             <Fade right>
-                <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+                <div className={style.projectsContainer}>
                     <Title text={'My Projects'}/>
                     <div className={style.projects}>
                         {projects.map(p => <Project key={p.id} style={p.style} title={p.title} description={p.description} onClick={p.onClick} />)}

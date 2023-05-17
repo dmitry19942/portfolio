@@ -1,5 +1,4 @@
 import style from './Main.module.scss';
-import styleContainer from './../common/styles/Container.module.css'
 import photoImage from '../assets/photo/photo.jpg'
 import Particles from "react-tsparticles";
 import {useCallback} from "react";
@@ -110,7 +109,7 @@ function Main() {
             <Particles className={style.particles} id={'tsparticles'} init={particlesInit}
                        loaded={particlesLoaded} options={particlesOpt}/>
             <Fade top>
-                <div className={styleContainer.container}>
+                <div className={style.mainContainer}>
                     <div className={style.text}>
                         <h5>HELLO, MY NAME IS</h5>
                         <h1>DZMITRY HARUSTOVICH</h1>

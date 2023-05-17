@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .footerBlock {
     text-align: center;
@@ -9,6 +10,7 @@
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: nowrap;
+        @include container();
         .a {
             text-decoration: none;
             .title {
