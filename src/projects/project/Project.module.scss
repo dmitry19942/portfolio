@@ -3,18 +3,14 @@
 
 .project {
     width: 400px;
+    @include flexable(flex-start, center, column);
     background-color: $bgSecondColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     margin-top: 20px;
     .image {
         height: 280px;
         width: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include flexable(space-around, center, column);
         flex-wrap: wrap;
         background-size: cover;
         background-repeat: no-repeat;
@@ -44,15 +40,13 @@
         .button {
             height: 45px;
             width: 90px;
+            @include flexable(center, center, column);
             background-color: $textColor;
             border: none;
             font-weight: bold;
             font-family: 'Poppins', sans-serif;
             font-size: 15px;
             color: $primaryColor;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             position: relative;
             z-index: 0;
             cursor: pointer;

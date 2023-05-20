@@ -8,15 +8,10 @@
         padding: 80px 0;
     }
     .contactsContainer {
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
+        @include flexable(flex-start, center, column);
         @include container();
         .formContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flexable(flex-start, center, column);
             width: 50%;
             .input {
                 margin-top: 45px;
@@ -44,6 +39,18 @@
                 padding: 15px 15px;
                 @include text(('Poppins', sans-serif), 14px, 1.2);
             }
+            .button {
+                @include text(('Poppins', sans-serif), 14px, 1.2);
+                height: 35px;
+                width: 160px;
+                background-color: $primaryColor;
+                border: none;
+                margin-top: 15px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #2771ff;
+                }
+            }
         }
         .formContainer input, .formContainer textarea {
             width: 70%;
@@ -64,18 +71,6 @@
             }
             @media screen and (max-width: 400px){
                 width: 170%;
-            }
-        }
-        .button {
-            @include text(('Poppins', sans-serif), 14px, 1.2);
-            height: 35px;
-            width: 160px;
-            background-color: $primaryColor;
-            border: none;
-            margin-top: 15px;
-            cursor: pointer;
-            &:hover {
-                background-color: #2771ff;
             }
         }
     }

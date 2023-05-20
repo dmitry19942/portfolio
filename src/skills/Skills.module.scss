@@ -9,10 +9,7 @@
         padding: 80px 0;
     }
     .skillsContainer {
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
+        @include flexable(flex-start, center, column);
         @include container();
         .skills {
             width: 100%;
