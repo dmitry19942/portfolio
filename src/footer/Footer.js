@@ -38,9 +38,12 @@ function Footer() {
                         <a onClick={() => openInNewTab('https://t.me/dmitriy19942')}>
                             <div className={style.icon} style={telegram}></div>
                         </a>
-                        <a onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100050173746359&ref=bookmarks')}><div className={style.icon} style={facebook}></div>
+                        <a onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100050173746359&ref=bookmarks')}>
+                            <div className={style.icon} style={facebook}></div>
                         </a>
-                        <div className={style.icon} style={linkedin}></div>
+                        <a onClick={() => openInNewTab('https://www.linkedin.com/in/dzmitry-harustovich-033916264')}>
+                            <div className={style.icon} style={linkedin}></div>
+                        </a>
                         <a onClick={() => openInNewTab('mailto:gorustovich2013@gmail.com')}>
                             <div className={style.icon} style={gmail}></div>
                         </a>
