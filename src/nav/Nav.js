@@ -1,5 +1,6 @@
 import style from './Nav.module.scss';
 import {useEffect} from "react";
+import { Link } from "react-scroll";
 
 
 function Nav(props) {
@@ -11,10 +12,42 @@ function Nav(props) {
 
     return (
         <div className={style.nav}>
-            <a className={style.a} href={"#main"}>Home</a>
-            <a className={style.a} href={"#skills"}>Skills</a>
-            <a className={style.a} href={"#projects"}>Projects</a>
-            <a className={style.a} href={"#contacts"}>Contacts</a>
+                <a className={style.a}>
+                    <Link activeClass={style.active}
+                          to={'main'}
+                          spy={true}
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                    >Main</Link>
+                </a>
+                <a className={style.a}>
+                    <Link activeClass={style.active}
+                          to={'skills'}
+                          spy={true}
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                    >Skills</Link>
+                </a>
+                <a className={style.a}>
+                    <Link activeClass={style.active}
+                      to={'projects'}
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >Projects</Link>
+                </a>
+                <a className={style.a}>
+                    <Link activeClass={style.active}
+                      to={'contacts'}
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >Contacts</Link>
+                </a>
             <div className={style.menu}>
                 <div className={style.burgerBtn}>
                     <svg className={style.svg} onClick={props.openMenu} aria-hidden='true' focusable='false' data-prefix='fas' data-icon='bars'
@@ -38,7 +71,7 @@ function Nav(props) {
                         </div>
                         <div className={style.menuItems}>
                             <div className={style.menuOneItem}>
-                                <a href={"#main"} className={style.menuLink}>HOME</a>
+                                <a href={"#main"} className={style.menuLink}>MAIN</a>
                                 <a href={"#skills"} className={style.menuLink}>SKILLS</a>
                                 <a href={"#projects"} className={style.menuLink}>PROJECTS</a>
                                 <a href={"#contacts"} className={style.menuLink}>CONTACTS</a>
