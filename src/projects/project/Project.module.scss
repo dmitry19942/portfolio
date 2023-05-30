@@ -25,6 +25,9 @@
             right: 0;
             opacity: 0.2;
         }
+        &:hover {
+            filter: saturate(300%);
+        }
         @media screen and (max-width: 500px){
                 width: 360px;
                 height: 252px;

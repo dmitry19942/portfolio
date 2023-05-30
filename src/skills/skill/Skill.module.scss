@@ -14,6 +14,9 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        &:hover {
+            filter: hue-rotate(270deg);
+        }
     }
     .title {
         @include text(('Josefin Sans', sans-serif), 16px, 1.2);
