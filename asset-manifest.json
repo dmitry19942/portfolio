@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.88b60a17.css",
-    "main.js": "/portfolio/static/js/main.18ec960b.js",
+    "main.js": "/portfolio/static/js/main.d8113a1b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/CV.jpg": "/portfolio/static/media/CV.a8de31ade8ea18573e23.jpg",
     "static/media/UnitTest.png": "/portfolio/static/media/UnitTest.09859ca6a8497c85c5f2.png",
     "static/media/RestAPI.png": "/portfolio/static/media/RestAPI.c5618b6df35050c50c2e.png",
     "static/media/futureProject2.webp": "/portfolio/static/media/futureProject2.15b087bd61a1ad126ca3.webp",
@@ -19,15 +20,14 @@
     "static/media/Redux.png": "/portfolio/static/media/Redux.7ea723c9435ca6efc295.png",
     "static/media/react.png": "/portfolio/static/media/react.42a7b3a5e9cc6311ce11.png",
     "static/media/storybook.png": "/portfolio/static/media/storybook.7756d21275161e22f4d5.png",
-    "static/media/photo.jpg": "/portfolio/static/media/photo.d3ed11af566bd8523f17.jpg",
     "static/media/facebookLogo.png": "/portfolio/static/media/facebookLogo.3cb08c9d44e0707a25e4.png",
     "index.html": "/portfolio/index.html",
     "main.88b60a17.css.map": "/portfolio/static/css/main.88b60a17.css.map",
-    "main.18ec960b.js.map": "/portfolio/static/js/main.18ec960b.js.map",
+    "main.d8113a1b.js.map": "/portfolio/static/js/main.d8113a1b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88b60a17.css",
-    "static/js/main.18ec960b.js"
+    "static/js/main.d8113a1b.js"
   ]
 }
